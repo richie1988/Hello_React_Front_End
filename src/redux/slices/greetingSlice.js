@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const apiUrl = process.env.REACT_APP_RAILS_URL || 'http://127.0.0.1:3000/api/v1/messages';
