@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from './redux/hooks';
 import { fetchGreeting } from './redux/slices/greetingSlice';
 
-
 const App = () => {
   const dispatch = useAppDispatch();
   const greeting = useAppSelector((state) => state.greeting.value);
@@ -12,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchGreeting());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
